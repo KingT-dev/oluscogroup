@@ -114,6 +114,7 @@ nav{
   font-size: 20px;
   font-weight: 500;
 }
+
 .nav-right ul li {
   color: var(--black);
   font-size: 20px;
@@ -146,6 +147,17 @@ nav{
   align-items: flex-start;
   flex-direction: column;
   padding: 50px;
+}
+
+#close-btn{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  cursor: pointer;
 }
 
 .sidebar-logo{
@@ -193,11 +205,34 @@ nav{
   font-weight: 500;
   line-height: 1.5rem;
 }
+
 .sidebar div h4{
   font-size: 20px;
   color: var(--primary-color);
   text-transform: uppercase;
 }
+
+.sidebar-wrapper{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.sidebar-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  place-content: center;
+  gap: 20px;
+}
+
+.sidebar-grid img{
+  width: 90%;
+  height: 90%;
+}
+
 .sidebar .social-icons{
   display: flex;
   justify-content: flex-start;
@@ -207,20 +242,24 @@ nav{
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .sidebar .social-icons .icons{
   display: flex;
   gap: 20px;
 }
+
 .sidebar .social-icons h4{
   font-size: 20px;
   color: var(--primary-color);
   text-transform: uppercase;
 }
+
 .sidebar .social-icons a{
   color: var(--text-color);
   font-size: 1rem;
   transition: var(--transition-slow);
 }
+
 .sidebar .social-icons a:hover{
   color: var(--primary-color);
 }
